@@ -1,0 +1,16 @@
+RANDOM FOREST LOOCV EVALUATION METHODOLOGY
+
+Evaluation runs: 150
+Repeats: 30
+LOOCV folds: 5
+
+Evaluation is based on probabilities assigned to held-out known occurrences.
+Each known occurrence was held out once per repeat, producing 30 independent held-out predictions for each occurrence.
+Overall, repeat-level, fold-level and occurrence-level probability summaries were calculated.
+Occurrence-level 95% confidence intervals use the Student t distribution across the 30 repeats.
+Permutation importance was summarized both for encoded model-matrix columns and for the seven original predictors.
+Lithology dummy-variable importances were summed within each run before original-predictor importance was summarized.
+
+ROC-AUC, specificity, precision, recall and F1 were not calculated because independently verified absence locations are not available.
+OOB error is retained as a training diagnostic and must not be interpreted as independent spatial validation.
+Full-grid threshold and occurrence-capture evaluation will be performed after full-grid RF prospectivity prediction.

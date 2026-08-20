@@ -1,0 +1,9 @@
+"Check","Result"
+"12 model-threshold combinations",TRUE
+"Each combination contains 150 positives",TRUE
+"Each combination contains 15000 pseudo-background negatives",TRUE
+"All Recall values within 0-1",TRUE
+"All Specificity values within 0-1",TRUE
+"All Precision values within 0-1 where defined",TRUE
+"All F1 values within 0-1 where defined",TRUE
+"All Balanced Accuracy values within 0-1",TRUE

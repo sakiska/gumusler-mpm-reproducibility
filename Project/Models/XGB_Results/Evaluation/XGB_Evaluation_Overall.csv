@@ -1,0 +1,2 @@
+"Algorithm","Run_n","Mean_HeldOut_Probability","SD_HeldOut_Probability","Median_HeldOut_Probability","Minimum_HeldOut_Probability","Maximum_HeldOut_Probability","Mean_Inner_CV_Logloss","SD_Inner_CV_Logloss"
+"XGBoost",150,0.18303728859406,0.184113803107719,0.134816102683544,0.00211572856642306,0.927802562713623,0.160934849075692,0.0282462462914842

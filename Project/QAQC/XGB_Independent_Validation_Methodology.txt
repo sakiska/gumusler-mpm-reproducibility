@@ -1,0 +1,14 @@
+XGBOOST INDEPENDENT VALIDATION METHODOLOGY
+============================================
+
+Each of the 150 accepted XGBoost outer-LOOCV models was reconstructed using its original fold-specific training dataset.
+
+The previously selected hyperparameters, number of boosting rounds and XGBoost random seed were reused. Hyperparameter tuning was not repeated.
+
+All preprocessing applied to independent validation cells was derived exclusively from the corresponding outer-training dataset.
+
+For each run, the genuinely held-out occurrence and 100 independent pseudo-background cells were predicted.
+
+The validation pseudo-background cells were not used during fitting, preprocessing, tuning, early stopping or threshold estimation.
+
+Pseudo-background cells are not verified mineral absences. Therefore subsequent confusion-matrix metrics quantify occurrence-versus-pseudo-background discrimination.

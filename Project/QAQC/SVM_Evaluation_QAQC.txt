@@ -1,0 +1,7 @@
+SVM EVALUATION QAQC
+
+Runs evaluated: 150
+Invalid probabilities: 0
+Runs without scaling: 0
+Selected Cost-Gamma combinations: 10
+Overall QAQC status: PASS

@@ -1,0 +1,17 @@
+RANDOM FOREST LOOCV EVALUATION QAQC
+
+Expected runs: 150
+Observed runs: 150
+Unique Run_ID values: 150
+Duplicated Run_ID values: 0
+Failed run records: 0
+Invalid held-out probabilities: 0
+Invalid final OOB errors: 0
+Missing importance values: 0
+Run_ID values without importance records: 0
+Importance records with unknown Run_ID values: 0
+Each occurrence has 30 predictions: TRUE
+Each fold has 30 predictions: TRUE
+Each repeat has 5 held-out predictions: TRUE
+Grouped predictor count equals 7: TRUE
+Overall QAQC status: PASS

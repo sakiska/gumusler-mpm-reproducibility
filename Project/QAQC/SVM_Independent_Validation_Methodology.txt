@@ -1,0 +1,12 @@
+SVM INDEPENDENT VALIDATION METHODOLOGY
+============================================
+
+Each of the 150 accepted radial-SVM outer-LOOCV models was reconstructed using its original fold-specific training dataset.
+
+Numeric predictors in the independent validation set were imputed, centered and scaled using parameters learned exclusively from the corresponding outer-training set.
+
+Stored Cost, Gamma, class weights and SVM random seed were reused. Hyperparameter tuning was not repeated.
+
+For each run, one genuinely held-out occurrence and 100 independent pseudo-background cells were predicted.
+
+Pseudo-background cells are not verified mineral absences. Subsequent confusion-matrix metrics therefore quantify occurrence-versus-pseudo- background discrimination.

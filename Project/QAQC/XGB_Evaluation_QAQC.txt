@@ -1,0 +1,6 @@
+XGBOOST EVALUATION QAQC
+
+Runs evaluated: 150
+Invalid probabilities: 0
+Grouped predictors: 7
+Overall QAQC status: PASS

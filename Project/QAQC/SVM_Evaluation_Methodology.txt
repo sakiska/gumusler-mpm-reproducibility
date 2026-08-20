@@ -1,0 +1,7 @@
+SVM EVALUATION METHODOLOGY
+
+Final evaluation summaries use only genuinely held-out occurrence probabilities from the leakage-free repeated LOOCV procedure.
+Numeric predictors were standardized using parameters learned exclusively from each outer-training set.
+Cost and gamma were selected independently within each outer run using stratified inner cross-validation and binary logloss.
+ROC, precision, recall, specificity and F1 were not calculated at this stage because pseudo-background cells are not verified absences.
+Radial SVM does not provide a native variable importance measure directly comparable with tree-based RF and XGBoost importance.

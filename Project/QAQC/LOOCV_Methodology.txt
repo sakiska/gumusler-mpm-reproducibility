@@ -1,0 +1,45 @@
+GUMUSLER MPM - LOOCV METHODOLOGY
+==================================================
+
+Script:
+Project/Models/Create_LOOCV_Folds.R
+
+Purpose:
+Create a common Leave-One-Occurrence-Out cross-validation plan for RF, XGBoost and SVM.
+
+Fixed validation design:
+- Total occurrence count: 5
+- Total LOOCV folds: 5
+- Training occurrences per fold: 4
+- Test occurrences per fold: 1
+- Background repeats: 30
+- Pseudo-background cells per repeat: 100
+- Exclusion-buffer distance: 50 m
+- Fold-repeat combinations: 150
+- Algorithms: RF, XGBoost, SVM
+- Total planned algorithm runs: 450
+
+LOOCV definition:
+Each known occurrence is held out exactly once. The remaining four occurrences form the positive training class for that fold.
+
+Shared experimental design:
+RF, XGBoost and SVM use the same folds, repeat numbers and pseudo-background seeds. Therefore, differences among their validation results are not caused by different occurrence partitions or random background realizations.
+
+Background seed rule:
+Repeat 1 to 30 use seeds 101 to 130, respectively.
+
+Leakage-control rule:
+The held-out occurrence is not included in model fitting. Background sampling, predictor preprocessing, hyperparameter selection and model fitting must be executed inside the corresponding training workflow.
+
+Important:
+This script defines validation membership and random seeds only. It does not select pseudo-background cells and does not fit any model.
+
+Input files:
+Project/Tables/Occurrence_Cell_Assignment.csv
+Project/Data/PseudoBackground_CandidatePool.csv
+
+Output files:
+Project/Tables/LOOCV_Fold_Definitions.csv
+Project/Tables/LOOCV_Fold_Repeat_Plan.csv
+Project/Tables/LOOCV_Training_Occurrence_Membership.csv
+Project/Tables/LOOCV_Algorithm_Run_Plan.csv

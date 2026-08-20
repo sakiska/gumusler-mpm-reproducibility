@@ -1,0 +1,23 @@
+GUMUSLER MPM - LOOCV QA/QC
+==================================================
+
+Run date: 2026-08-19 14:40:37
+
+Occurrence count: 5
+Candidate-pool count: 9536
+LOOCV fold count: 5
+Repeat count: 30
+Fold-repeat combinations: 150
+Algorithm count: 3
+Total planned algorithm runs: 450
+
+Each occurrence held out exactly once: PASS
+Each fold has four training occurrences: PASS
+Each fold has one test occurrence: PASS
+Training-test CellID overlaps: 0
+Duplicate Run_ID values: 0
+Duplicate Algorithm_Run_ID values: 0
+Repeat-seed consistency: PASS
+Algorithm-plan consistency: PASS
+
+FINAL QA/QC STATUS: PASS

@@ -1,0 +1,29 @@
+GUMUSLER MPM - PSEUDO-BACKGROUND QA/QC
+==================================================
+
+Run date: 2026-08-19 14:33:32
+
+Input grid cells: 9600
+Input occurrences: 5
+Occurrence cells found in grid: 5
+Exclusion-buffer distance: 50 m
+Cells inside or touching buffer: 64
+Pseudo-background candidate cells: 9536
+
+Minimum candidate distance: 50.761 m
+Maximum candidate distance: 1774.735 m
+
+Buffer violations: 0
+Occurrence-background overlaps: 0
+Duplicate candidate CellID values: 0
+
+Missing predictor values in candidate pool:
+Pb_OK = 0
+Zn_OK = 0
+Cu_OK = 0
+Lithology = 0
+Dist_Fault = 0
+Dist_Silicified = 0
+Dist_Brecciated = 0
+
+FINAL QA/QC STATUS: PASS

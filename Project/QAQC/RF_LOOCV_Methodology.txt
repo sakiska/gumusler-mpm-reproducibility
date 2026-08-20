@@ -1,0 +1,14 @@
+RANDOM FOREST LOOCV METHODOLOGY
+
+Expected runs: 150
+Number of trees: 1000
+Minimum node size candidates: 1, 3, 5
+Predictors: Pb_OK, Zn_OK, Cu_OK, Lithology, Dist_Fault, Dist_Silicified, Dist_Brecciated
+Categorical predictors: Lithology
+
+Each run used four training occurrences, one held-out occurrence and 100 fold-specific pseudo-background cells.
+Pseudo-background cells were generated using only the training occurrence buffer.
+Known occurrence cells were excluded from pseudo-background selection.
+All model-matrix transformations were learned from the training data.
+Random Forest hyperparameters were selected using training-set out-of-bag prediction error.
+The held-out occurrence was not used in background generation, preprocessing, tuning or model fitting.

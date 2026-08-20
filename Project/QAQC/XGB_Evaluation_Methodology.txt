@@ -1,0 +1,5 @@
+XGBOOST EVALUATION METHODOLOGY
+
+Final performance summaries use only genuinely held-out occurrence probabilities.
+ROC, PR, recall, precision, specificity and F1 were not calculated because pseudo-background cells are not verified absences.
+Lithology dummy-variable gains were summed within each run before grouped predictor summaries were calculated.

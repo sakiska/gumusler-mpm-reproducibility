@@ -1,0 +1,14 @@
+RF MEDIAN + 2MAD VALIDATION METHODOLOGY
+============================================
+
+For each of the 150 accepted RF outer-LOOCV runs, the model was reconstructed using the original fold-specific training data, selected hyperparameters, class weights and RF seed.
+
+Each reconstructed model predicted the complete 25 m grid.
+
+A run-specific robust threshold was calculated as Median + 2 * MAD_scaled, where MAD_scaled equals 1.4826 times the median absolute deviation from the run-specific grid median.
+
+The held-out occurrence and independent validation pseudo-background cells were not used to calculate the threshold.
+
+Each run-specific threshold was then applied to the existing leakage-free independent validation predictions for the same run.
+
+Pseudo-background cells are not confirmed absences; classification metrics quantify discrimination against pseudo-background.

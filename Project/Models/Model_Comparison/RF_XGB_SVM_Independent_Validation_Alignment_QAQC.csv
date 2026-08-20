@@ -1,0 +1,8 @@
+"Check","Result"
+"RF and XGB validation samples identical",TRUE
+"RF and SVM validation samples identical",TRUE
+"RF has 15150 rows",TRUE
+"XGB has 15150 rows",TRUE
+"SVM has 15150 rows",TRUE
+"Each model has 150 positives",TRUE
+"Each model has 15000 pseudo-background negatives",TRUE

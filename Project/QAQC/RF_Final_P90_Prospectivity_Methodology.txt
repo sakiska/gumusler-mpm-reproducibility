@@ -1,0 +1,19 @@
+FINAL RF-P90 MINERAL PROSPECTIVITY MAP
+============================================
+
+The final prospectivity surface is the cell-wise mean occurrence probability from 150 accepted leakage-free Random Forest runs.
+
+Random Forest was selected over XGBoost and SVM using independent occurrence-versus-pseudo-background validation and threshold-free and threshold-dependent performance metrics.
+
+The operational threshold was selected as P90 after sensitivity analysis against P95, P99, Mean+2SD and scaled Median+2MAD thresholds.
+
+Final ensemble P90 threshold: 0.0831089141044258.
+
+Prospective grid fraction: 960 of 9600 cells (10%).
+
+Known occurrences and available geological vector layers are displayed only as map overlays and do not alter the final RF probability or P90 classification.
+
+Occurrence vector: Project/Vector/occurrences.shp
+Fault vector: Project/Vector/faults.shp
+Silicified vector: Project/Vector/silicifiedZones.shp
+Brecciated vector: Project/Vector/brecciatedZones.shp

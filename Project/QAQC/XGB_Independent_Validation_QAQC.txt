@@ -1,0 +1,25 @@
+XGBOOST INDEPENDENT VALIDATION QA/QC
+============================================
+
+150 successful XGBoost runs: TRUE
+15150 validation prediction rows: TRUE
+150 held-out occurrence predictions: TRUE
+15000 independent pseudo-background predictions: TRUE
+No training-validation CellID overlap: TRUE
+No validation-held-out occurrence overlap: TRUE
+All reconstructed held-out probabilities reproduce originals: TRUE
+All probabilities within 0-1: TRUE
+All run QAQC statuses PASS: TRUE
+
+Leakage-control conditions:
+
+- Fold-specific outer-training data were reconstructed using the original repeated LOOCV run definition.
+- Independent validation pseudo-background cells were not included in model fitting.
+- Validation data were not used for preprocessing, hyperparameter selection, early stopping or model configuration.
+- Only preprocessing rules learned from the outer-training data were applied to validation cells.
+- Training and validation CellIDs were explicitly checked for overlap.
+- The held-out occurrence remained outside model fitting.
+- Previously selected hyperparameters, Best_nrounds and XGB_Seed were reused.
+- Reconstructed held-out probabilities were compared against original stored LOOCV probabilities.
+
+FINAL STATUS: PASS

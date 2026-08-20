@@ -1,0 +1,6 @@
+XGBOOST LOOCV METHODOLOGY
+
+The same repeated LOOCV folds, fold-specific pseudo-background samples and predictor matrix used for RF were retained.
+Hyperparameters were selected independently within each outer run using stratified inner cross-validation on that run's training data only.
+The final model was refitted on the complete outer-training set and evaluated only at the genuinely held-out occurrence.
+Pseudo-background locations were not treated as verified absences in final performance reporting.

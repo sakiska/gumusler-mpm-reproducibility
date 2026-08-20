@@ -1,0 +1,33 @@
+# R / RStudio session files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor/IDE metadata
+.vscode/
+.idea/
+
+# Temporary and backup files
+*~
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+.~lock.*
+repo_tree*.txt
+Project/Models_backup_*/
+
+# Python/Jupyter cache files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Scientific inputs, generated outputs, QA/QC records,
+# tables, figures, and final rasters are intentionally versioned.

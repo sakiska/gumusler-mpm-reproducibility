@@ -1,0 +1,2 @@
+"Final_Model","Final_Threshold_Method","Ensemble_P90_Threshold","Total_Grid_Cell_n","Prospective_Cell_n","Prospective_Grid_Percent","Independent_Validation_TP","Independent_Validation_FN","Independent_Validation_TN","Independent_Validation_FP","Independent_Validation_Recall","Independent_Validation_Specificity","Independent_Validation_Precision","Independent_Validation_F1","Independent_Validation_Balanced_Accuracy"
+"RF","P90",0.0831089141044258,9600,960,10,127,23,13663,1337,0.846666666666667,0.910866666666667,0.0867486338797814,0.157372986369269,0.878766666666667

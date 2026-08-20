@@ -1,0 +1,12 @@
+RF INDEPENDENT VALIDATION METHODOLOGY
+============================================
+
+Each of the 150 accepted RF outer-LOOCV models was reconstructed from its original fold-specific training dataset.
+
+Previously selected RF hyperparameters and the stored RF random seed were reused. No tuning was repeated and the validation data had no influence on model configuration.
+
+For each run, one genuinely held-out occurrence and 100 independent pseudo-background cells were predicted.
+
+The held-out probability was recalculated only to verify exact model reconstruction and was compared against the probability stored during the original LOOCV workflow.
+
+Pseudo-background cells are not confirmed mineralization absences. Subsequent confusion matrix metrics therefore quantify discrimination between known occurrences and pseudo-background.

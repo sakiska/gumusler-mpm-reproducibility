@@ -1,0 +1,9 @@
+SVM FULL-GRID METHODOLOGY
+
+Each accepted outer-LOOCV radial SVM model was reconstructed using its fold-specific training data, selected Cost and Gamma, stored class weights and random seed.
+Numeric full-grid predictors were imputed and standardized using only the corresponding outer-training medians, means and standard deviations.
+Categorical levels and one-hot encoded model columns were reproduced from the corresponding outer-training preprocessing object.
+Each reconstructed model predicted all valid 25 m grid cells.
+Cell-level ensemble mean, standard deviation, minimum and maximum occurrence probabilities were calculated from 150 predictions.
+P90, P95, P99 and Mean + 2 SD thresholds were calculated separately from each run's full-grid probability distribution.
+Threshold capture was evaluated only with the corresponding genuinely held-out occurrence probability.

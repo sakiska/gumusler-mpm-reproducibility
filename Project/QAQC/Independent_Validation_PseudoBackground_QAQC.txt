@@ -1,0 +1,28 @@
+INDEPENDENT VALIDATION PSEUDO-BACKGROUND QA/QC
+==================================================
+
+Fold-repeat runs: 150
+Validation pseudo-background cells per run: 100
+Total validation rows: 15000
+
+GLOBAL QA/QC
+--------------------------------------------------
+Expected fold-repeat runs: TRUE
+Expected validation rows: TRUE
+Exactly 100 validation backgrounds per run: TRUE
+No duplicate validation CellID within run: TRUE
+No validation-training background overlap: TRUE
+No validation-training occurrence overlap: TRUE
+No validation-held-out occurrence overlap: TRUE
+All validation cells >50 m from training occurrences: TRUE
+All run-level QAQC PASS: TRUE
+
+LEAKAGE CONTROL
+--------------------------------------------------
+- Validation cells were selected only from the fold-specific candidate pool constructed from training-occurrence information.
+- The held-out occurrence was NOT used to construct a distance buffer for validation pseudo-background selection.
+- Training pseudo-background cells were explicitly excluded from validation sampling.
+- All known occurrence CellIDs were excluded from pseudo-background eligibility by the underlying fold preparation workflow.
+- Validation pseudo-background is independent of model fitting, preprocessing, tuning and threshold calculation.
+
+FINAL STATUS: PASS

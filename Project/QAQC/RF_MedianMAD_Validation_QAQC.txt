@@ -1,0 +1,16 @@
+RF MEDIAN + 2MAD VALIDATION QA/QC
+============================================
+
+150 successful RF runs: TRUE
+150 run-specific Median+2MAD thresholds: TRUE
+150 run-level validation metric rows: TRUE
+Total positives equal 150: TRUE
+Total pseudo-background negatives equal 15000: TRUE
+All thresholds finite and within 0-1: TRUE
+All MAD values non-negative: TRUE
+Recall within 0-1: TRUE
+Specificity within 0-1: TRUE
+Balanced Accuracy within 0-1: TRUE
+No run errors: TRUE
+
+FINAL STATUS: PASS

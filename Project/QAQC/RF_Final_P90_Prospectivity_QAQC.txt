@@ -1,0 +1,24 @@
+FINAL RF-P90 PROSPECTIVITY QA/QC
+============================================
+
+RF ensemble contains 9600 grid cells: TRUE
+Every grid cell contains 150 RF predictions: TRUE
+P90 threshold is finite and within 0-1: TRUE
+P90 threshold matches final sensitivity table: TRUE
+All RF probabilities are valid: TRUE
+All RF SD values are non-negative: TRUE
+No duplicated final CellID: TRUE
+No duplicated raster-cell assignment: TRUE
+Continuous raster written: TRUE
+Uncertainty raster written: TRUE
+Binary P90 raster written: TRUE
+Continuous figure written: TRUE
+Final P90 figure written: TRUE
+Final CSV written: TRUE
+Final threshold summary written: TRUE
+
+Final RF ensemble P90 threshold: 0.0831089141044258
+Prospective cells: 960 / 9600
+Prospective grid percent: 10
+
+FINAL STATUS: PASS

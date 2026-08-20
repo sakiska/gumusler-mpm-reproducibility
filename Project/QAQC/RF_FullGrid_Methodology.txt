@@ -1,0 +1,12 @@
+RANDOM FOREST FULL-GRID PREDICTION METHODOLOGY
+
+Accepted RF runs: 150
+Grid cells: 9600
+Trees per model: 1000
+
+Each of the 150 accepted LOOCV RF models was reconstructed using the same fold-specific training data, selected hyperparameters, class weights and RF seed.
+Each reconstructed model predicted every valid 25 m full-grid cell.
+Cell-level ensemble mean, standard deviation, minimum and maximum occurrence probabilities were calculated.
+P90, P95, P99 and Mean + 2 SD thresholds were calculated separately from each run's full-grid probability distribution.
+Threshold capture was evaluated using only the genuinely held-out occurrence probability from the corresponding run.
+Ensemble map probabilities at known occurrence cells were not used as validation values because most ensemble models were trained with those occurrences.

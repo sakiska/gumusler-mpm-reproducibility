@@ -1,0 +1,14 @@
+INDEPENDENT VALIDATION PSEUDO-BACKGROUND METHODOLOGY
+====================================================
+
+For each of the 150 repeated LOOCV runs, 100 independent pseudo-background cells were selected.
+
+The validation cells were sampled from the same fold-specific eligibility domain used by the training workflow, where eligibility was determined using only the four training occurrences.
+
+The held-out occurrence was not used to define the 50 m exclusion distance. This prevents test information from influencing validation-background selection.
+
+Cells already selected as training pseudo-background for the corresponding fold-repeat run were removed before validation sampling.
+
+Validation pseudo-background cells will later be used together with the single held-out occurrence to calculate occurrence-versus-pseudo-background classification metrics.
+
+Pseudo-background cells are not interpreted as confirmed mineralization absences. Therefore specificity, precision, F1 and related metrics must be interpreted as discrimination against pseudo-background rather than true absence.

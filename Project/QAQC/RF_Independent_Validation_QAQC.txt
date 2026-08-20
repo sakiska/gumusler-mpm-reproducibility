@@ -1,0 +1,22 @@
+RF INDEPENDENT VALIDATION QA/QC
+============================================
+
+150 successful RF runs: TRUE
+15150 validation prediction rows: TRUE
+150 held-out occurrence predictions: TRUE
+15000 independent pseudo-background predictions: TRUE
+No training-validation CellID overlap detected: TRUE
+All reconstructed held-out probabilities reproduce originals: TRUE
+All probabilities within 0-1: TRUE
+All run QAQC statuses PASS: TRUE
+
+Leakage-control conditions:
+
+- Fold-specific training data were reconstructed using the original LOOCV run definition.
+- Validation pseudo-background cells were never included in model fitting.
+- Validation pseudo-background cells were never used in preprocessing or tuning.
+- Validation CellIDs were checked against outer-training CellIDs.
+- The held-out occurrence remained outside model fitting.
+- The reconstructed held-out probability was required to reproduce the original stored LOOCV probability.
+
+FINAL STATUS: PASS

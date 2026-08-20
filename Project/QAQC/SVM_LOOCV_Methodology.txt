@@ -1,0 +1,7 @@
+SVM LOOCV METHODOLOGY
+
+The same repeated LOOCV folds, fold-specific pseudo-background samples and predictor matrix used for RF and XGBoost were retained.
+Numeric predictors were standardized using parameters learned exclusively from each outer-training set.
+Cost and gamma were selected independently within each outer run using stratified inner cross-validation and binary logloss.
+The final radial SVM was refitted on the complete outer-training set and evaluated only at the genuinely held-out occurrence.
+Pseudo-background locations were not treated as verified absences in final performance reporting.

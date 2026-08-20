@@ -1,0 +1,2 @@
+"Grid_Cell_Count","Occurrence_Count","Buffer_Distance_m","Cells_Inside_or_Touching_Buffer","Occurrence_Cells","Candidate_Pool_Count","Buffer_Violations","Occurrence_Overlap","Duplicate_Candidate_CellID","QAQC_Status"
+9600,5,50,64,5,9536,0,0,0,"PASS"

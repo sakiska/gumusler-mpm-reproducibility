@@ -1,0 +1,12 @@
+"Check","Result"
+"Exactly five threshold methods",TRUE
+"All five methods unique",TRUE
+"Each method contains 150 positives",TRUE
+"Each method contains 15000 pseudo-background negatives",TRUE
+"All ensemble thresholds finite",TRUE
+"All ensemble prospective percentages within 0-100",TRUE
+"All Recall values within 0-1",TRUE
+"All Specificity values within 0-1",TRUE
+"All F1 values within 0-1 where defined",TRUE
+"All Balanced Accuracy values within 0-1",TRUE
+"No unexpected missing final sensitivity values",TRUE

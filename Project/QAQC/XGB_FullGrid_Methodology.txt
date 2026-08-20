@@ -1,0 +1,7 @@
+XGBOOST FULL-GRID METHODOLOGY
+
+Each accepted outer-LOOCV XGBoost model was reconstructed using its fold-specific training data, selected hyperparameters and stored random seed.
+Each model predicted all valid 25 m grid cells.
+Cell-level ensemble mean, standard deviation, minimum and maximum probabilities were calculated.
+P90, P95, P99 and Mean + 2 SD thresholds were calculated separately from each run's full-grid prediction distribution.
+Threshold capture was evaluated only with the corresponding genuinely held-out occurrence probability.

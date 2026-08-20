@@ -1,0 +1,23 @@
+SVM INDEPENDENT VALIDATION QA/QC
+============================================
+
+150 successful SVM runs: TRUE
+15150 validation prediction rows: TRUE
+150 held-out occurrence predictions: TRUE
+15000 independent pseudo-background predictions: TRUE
+No training-validation CellID overlap: TRUE
+No validation-held-out occurrence overlap: TRUE
+All reconstructed held-out probabilities reproduce originals: TRUE
+All probabilities within 0-1: TRUE
+All run QAQC statuses PASS: TRUE
+
+Leakage-control conditions:
+- Numeric imputation, centering and scaling were learned exclusively from the corresponding outer-training set.
+- Independent validation pseudo-background cells were never used in model fitting or hyperparameter tuning.
+- SVM internal scaling remained disabled because scaling was performed explicitly using outer-training parameters.
+- Training and validation CellIDs were explicitly checked for overlap.
+- The held-out occurrence remained outside model fitting.
+- Stored Cost, Gamma, class weights and SVM seed were reused.
+- Reconstructed held-out probabilities were required to reproduce the original LOOCV probabilities.
+
+FINAL STATUS: PASS

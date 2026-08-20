@@ -1,0 +1,9 @@
+XGBOOST FULL-GRID QAQC
+
+Expected runs: 150
+Successful runs: 150
+Failed runs: 0
+Grid cells: 9600
+Cells with 150 predictions: 9600
+Held-out capture records: 150
+Overall QAQC status: PASS

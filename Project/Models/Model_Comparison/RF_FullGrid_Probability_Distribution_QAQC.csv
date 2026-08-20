@@ -1,0 +1,12 @@
+"Check","Result"
+"9600 RF grid probabilities",TRUE
+"No missing probabilities",TRUE
+"All probabilities within 0-1",TRUE
+"Mean is finite",TRUE
+"Median is finite",TRUE
+"SD is finite",TRUE
+"Raw MAD is finite",TRUE
+"Scaled MAD is finite",TRUE
+"Skewness is finite",TRUE
+"Excess kurtosis is finite",TRUE
+"All candidate thresholds are finite",TRUE

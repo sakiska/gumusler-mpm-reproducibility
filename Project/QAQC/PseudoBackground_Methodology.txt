@@ -1,0 +1,35 @@
+GUMUSLER MPM - PSEUDO-BACKGROUND METHODOLOGY
+==================================================
+
+Script:
+Project/Models/Create_PseudoBackground.R
+
+Purpose:
+Create a common pseudo-background candidate pool for subsequent RF, XGBoost and SVM modelling.
+
+Fixed methodological decisions:
+- Grid resolution: 25 x 25 m
+- Known occurrence count: 5
+- Exclusion-buffer distance: 50 m
+- Buffer geometry: circular Euclidean distance
+- Boundary rule: distances <= 50 m are excluded
+
+Interpretation:
+The 50 m buffer does not represent the physical thickness of mineralized veins. It is an exclusion zone intended to prevent immediately adjacent and potentially mineralized cells from being labelled as pseudo-background.
+
+Candidate-pool definition:
+All grid cells located more than 50 m from every known occurrence and not themselves occurrence cells.
+
+Important class interpretation:
+Pseudo-background cells are not confirmed barren or true absence locations.
+
+Sampling decision:
+The selection of 100 pseudo-background cells and the 30 repeated samples will be performed later within the common model-validation workflow. RF, XGBoost and SVM will use identical background samples for each repeat and validation fold.
+
+Leakage-control decision:
+During leave-one-occurrence-out validation, background sampling, preprocessing and model tuning will be performed inside the training workflow. The held-out occurrence will never enter model fitting.
+
+Candidate-pool size produced: 9536
+
+Predictors:
+Pb_OK, Zn_OK, Cu_OK, Lithology, Dist_Fault, Dist_Silicified, Dist_Brecciated
