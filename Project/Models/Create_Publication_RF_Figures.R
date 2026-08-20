@@ -594,18 +594,25 @@ scale_height <- 0.012 *
   y_height
 
 scale_bar_df <- data.frame(
-  xmin = scale_x0 +
+  xmin = as.numeric(scale_x0) +
     (0:(scale_segment_n - 1)) *
-    scale_segment_length,
-  xmax = scale_x0 +
+    as.numeric(scale_segment_length),
+  xmax = as.numeric(scale_x0) +
     (1:scale_segment_n) *
-    scale_segment_length,
-  ymin = scale_y0,
-  ymax = scale_y0 + scale_height,
+    as.numeric(scale_segment_length),
+  ymin = rep(
+    as.numeric(scale_y0),
+    scale_segment_n
+  ),
+  ymax = rep(
+    as.numeric(scale_y0 + scale_height),
+    scale_segment_n
+  ),
   fill_key = rep(
     c("black", "white"),
     length.out = scale_segment_n
-  )
+  ),
+  stringsAsFactors = FALSE
 )
 
 north_x <- x_range[2] -
